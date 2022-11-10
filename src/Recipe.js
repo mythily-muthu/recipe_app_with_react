@@ -9,7 +9,7 @@ const Recipe = ({ title, cuisineType, calories, image, ingredients }) => {
             <h1>{title}</h1>
             <h2>{cuisineType} cuisine</h2>
             <h3>{calories} Calories</h3>
-            <ul>
+            <ul className='ingredians_container'>
                 {ingredients.map(ingredient => (
                     <li>{ingredient.text}</li>
                 ))}
